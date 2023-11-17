@@ -1,0 +1,92 @@
+body {background-color: #026dfa;}
+.img 
+  { 
+    width: 150px;
+    height: 70px;
+  }
+
+.h2
+  {
+    margin-bottom: 5%;
+  }
+header
+  {
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 60%;
+    margin-bottom: 5%;
+  }
+.but {display: none;}
+.wind
+  {
+    position: fixed;
+    z-index: 2;
+    top: 5px;
+    right: 100%;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+  }
+.button
+  {
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(168, 124, 209);
+    background-color: brown;
+  }
+.win
+  {
+    position: relative;
+    width: 50%;
+    height: 82%;
+    margin-top: 5%;
+    margin-left: 20%;
+    padding: 20px 20px 5px;
+    background-color: rgb(168, 124, 209) ;
+  }
+.modal_close
+  {
+    position: absolute;
+    z-index: 3;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 36px;
+    line-height: 25px;
+    text-align: center;
+  }
+.modal_win {font-size: smaller;}
+.but:checked+.wind {right: 0;}
+.link1
+  {
+    margin-top: 80%;
+    margin-left: 5px;
+    color:rgb(168, 124, 209) ;
+    background-color: black;
+    
+  }
+.link2
+  {
+    margin-top: 80%;
+    margin-left: 39%;
+    color:rgb(168, 124, 209) ;
+    background-color: black;
+  }  
+  @keyframes animac
+  {
+    0% {background: #65f3bd;}
+    25% {background: #04f76d;}
+    50% {background: rgb(7, 252, 52)}
+    75% {background: #3cff00;}
+    100% {background: rgb(191, 250, 55);}
+  }
+  .link1 ,.link2
+  {
+    animation-name: animac;
+    animation-fill-mode: forwards;
+    animation: animac 1500ms infinite ease;
+    color: black;
+  }

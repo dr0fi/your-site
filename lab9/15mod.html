@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="15mod_style.css">
+    </head>
+    <body>
+        <img class="img" src="c++.png" width="150px" height="60px" >
+    <h1>silvertests ответы</h1>
+    <h2 class="h2"> модуль 15 </h2>
+    <header>
+    <div>
+        <input type="checkbox" id="modal_label1" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label1"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+            
+                <p class="modal-win">
+                    #include >iostream> <br>
+                    using namespace std;<br>
+                    int main() {<br>
+                        const int Nmax = 100, Mmax = 100; <br>
+                        int A[Nmax][Mmax], n,m;<br>
+                        int i, j, s;<br>
+                        cin >> n >> m;  //вводим рабочий размер матрицы<br>
+                    //Заполнение матрицы размеров nxm с клавиатуры    <br>   
+                    int arr[n][m];<br>
+                        
+                        for (int i=0; i < n; ++i)<br>
+                            for (int j=0; j < m; ++j)<br>
+                                cin>>arr[i][j];<br>
+                    //вывод матрицы на экран по строчкам    <br>   
+                    for (int i=0; i < n; ++i)<br>
+                        {<br>
+                            for (int j=0; j < m; ++j)<br>
+                                cout << arr[i][j] << " ";<br>
+                                
+                            cout << endl;<br>
+                        }<br>
+                          
+                    } <br>   
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label1" class="button">Задача 1</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label2" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label2"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+             
+                <p class="modal-win">
+                     #include >iostream> <br>
+                    using namespace std;<br>
+                    
+                    int main() {<br>
+                    
+                    int n,m;<br>
+                    int a[20][20];<br>
+                    cin >> n >> m;<br>
+                    
+                    for(int i =0;i < n; i++) <br>
+                    for(int j =0;j < m; j++) <br>
+                    cin>>a[i][j];<br>
+                    for(int j = 0; j < m; j++){<br>
+                    for(int i = 0; i < n; i++){<br>
+                    cout << a[i][j] << " ";<br>
+                    }<br>
+                    cout << endl;<br>
+                    }<br>
+                    }<br> 
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label2" class="button">Задача 2</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label3" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label3"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+            
+                <p class="modal-win">
+                    #include >iostream> <br>
+                    using namespace std;<br>
+                    int main() {<br>
+                    const int Nmax = 100, Mmax = 100;<br>
+                    int A[Nmax][Mmax], n, m;<br>
+                    int i, j, s;<br>
+                    cin >> n >> m;<br>
+                    for (i = 0; i < n; i++){<br>
+                    for (j = 0; j < m; j++){<br>
+                    cin >> A[i][j];<br>
+                    }<br>
+                    }<br>
+                    cout << A[0][0] << " " << A[0][m-1] << " " << A[n-1][m-1] << " " << A[n-1][0] ;<br>
+                    }<br>
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label3" class="button">задача 3</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label4" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label4"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+        
+                <p class="modal-win">
+                    #include >iostream> <br>
+                    using namespace std;<br>
+                    int main() {<br>
+                    const int Nmax = 100, Mmax = 100;<br>
+                    int A[Nmax][Mmax], n, m;<br>
+                    int i, j, s;<br>
+                    cin >> n >> m;<br>
+                    for (i = 0; i < n; i++){<br>
+                    for (j = 0; j < m; j++){<br>
+                    cin >> A[i][j];<br>
+                    }<br>
+                    }<br>
+                    int k, kol = 0;<br>
+                    cin >> k;<br>
+                    for (i = 0; i < n; i++){<br>
+                    for (j = 0; j < m; j++){<br>
+                    if (k == A[i][j]){<br>
+                    kol++;<br>
+                    }<br>
+                    }<br>
+                    }<br>
+                    cout << kol;<br>
+                    }<br>
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label4" class="button">задача 4</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label5" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label5"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+            
+                <p class="modal-win">
+                    #include >iostream>
+                        #include >vector>
+                        using namespace std;
+                        
+                        int main() {
+                        int n,m,little,big,b=0,c=0,d=0,e=0;
+                        cin >> n >> m;
+                        int a[n][m];
+                        for(int i=0;i < n; i++){
+                        for(int j=0;j < m; j++)
+                        cin >> a[i][j];
+                        }
+                        little=a[0][0];
+                        big=a[0][0];
+                        for(int i=0;i < n; i++){
+                        for(int j=0;j < m; j++){
+                        if(little>a[i][j]){
+                        little=a[i][j];
+                        b=i; c=j;
+                        }
+                        if(big < a[i][j]){
+                        big=a[i][j];
+                        d=i+1; e=j+1;
+                        }
+                        }
+                        }
+                        cout << b+1 << " " << c+1 << " " << little << endl << d << " " << e << " " << big;
+                        return 0;
+                        }
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label5" class="button">задача 5</label>
+    </div>
+      
+    <div>
+        <input type="checkbox" id="modal_label6" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label6"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+             
+                <p class="modal-win">
+                        #include >iostream> <br>
+                        using namespace std;<br>
+                        int main() {<br>
+                        const int Nma = 100, Mma = 100;<br>
+                        int A[Nma][Mma], n, m;<br>
+                        cin >> n >> m;<br>
+                        for (int i = 0; i < n; i++){<br>
+                        for (int j = 0; j < m; j++){<br>
+                        cin >> A[i][j];<br>
+                        }}<br>
+                        int B[Nma];<br>
+                        int jm;<br>
+                        int maks = A[0][0];<br>
+                        for (int i = 0; i < n; i++){<br>
+                        for (int j = 0; j < m; j++){<br>
+                        if (maks < A[i][j]){<br>
+                        maks = A[i][j];<br>
+                        jm = j;<br>
+                        }}}<br>
+                        for (int j = 0; j < m; j++){<br>
+                        for (int i = 0; i < n; i++){<br>
+                        if (A[i][j] == maks) {<br>
+                        for (int k = 0; k < n; k++) {cout << A[k][j] << " ";}<br>
+                        cout << endl;<br>
+                        break;<br>
+                        }}}}<br>
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label6" class="button">задача 6</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label7" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label7"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+             
+                <p class="modal-win">
+                    #include >iostream> <br>
+                    #include >climits><br>
+                    using namespace std;<br>
+            
+                    int main()<br>
+                    {<br>
+                    int N, M, sum, min=INT_MAX, imin=0;<br>
+                    cin >> N >> M;<br>
+            
+                    int **a = new int*[N];<br>
+                    for (int i = 0; i < N; i++)<br>
+                    a[i]=new int[M];<br>
+            
+                    for (int i = 0; i < N; i++)<br>
+                    {<br>
+                    sum=0;<br>
+                    for (int j = 0; j < M; j++)<br>
+                    {<br>
+                    cin >> a[i][j];<br>
+                    sum+=a[i][j];<br>
+                    }<br>
+                    if (sum<min) {min=sum;imin=i;}<br>
+                    }<br>
+            
+                    for (int j = 0; j < M; j++)<br>
+                    cout << a[imin][j] << " ";<br>
+                    return 0;<br>
+                    }<br> 
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label7" class="button">задача 7</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label8" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label8"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+            
+                <p class="modal-win">
+                    здесь код 
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label8" class="button">Задача 8</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label9" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label9"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+            
+                <p class="modal-win">
+                    здесь код 
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label9" class="button">Задача 9</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label10" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label10"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+          
+                <p class="modal-win">
+                    #include >iostream><br>
+                    #include >climits><br>
+                    using namespace std;<br>
+                    int main()<br>
+                    {<br>
+                    int N, M;<br>
+                    cin >> N >> M;<br>
+                    for(int i = 0; i < N; i++){<br>
+                    for(int j = 0; j < M; j++){<br>
+                    cout << j+i << " ";<br>
+                    }<br>
+                    cout << endl;<br>
+                    }<br>
+                    return 0;<br>
+                    }<br>  
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label10" class="button">задача 10</label>
+    </div>
+    <div>
+        <input type="checkbox" id="modal_label1" class="but">
+        <section class="wind">
+        <aside class="win">
+                <label class="modal__close" for="modal_label1"><img width="20px" height="20px" src="https://avatars.mds.yandex.net/i?id=7e966198f6544110a6ee3536521eecf1e7977cb4-9844111-images-thumbs&n=13"> </label>
+            
+                <p class="modal-win">
+                    здесь код 
+                </p>
+            </aside>
+        </section>
+        <label for="modal_label1" class="button">Задача 11</label>
+    </div>
+     </header>
+    <a  class="link1" href="14mod.html">предыдущий модуль</a>
+    <a class="link2" href="16mod.html">следюуший модуль</a>
+</body>
+</html>
